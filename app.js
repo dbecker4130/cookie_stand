@@ -57,9 +57,9 @@ function SalmonCookies (minCustPerHour, maxCustPerHour, aveCookiesPerHour, store
     tableLocationsEl.textContent = this.storeLocation;
     tableLocationRows.appendChild(tableLocationsEl);
 
-    for (var i = 0); i < hours.length, i++) {
-      
-    }
+    //for (var i = 0); i < hours.length, i++) {
+
+    //}
   };
 }
 //render();
@@ -87,15 +87,10 @@ makeTableHeader();
 
 function makeTableRow(){
 
-
-
   for (var i = 0; i < storeLocation.length; i++) {
   }
 }
 makeTableRow();
-
-
-
 
 firstAndPike.render();
 seaTac.render();
