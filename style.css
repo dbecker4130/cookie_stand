@@ -1,0 +1,21 @@
+* {
+	/*outline: 1px dotted orange;*/
+}
+
+table {
+	outline: 2px dashed green;
+}
+
+tr {
+	/*outline: 1px solid black;*/
+}
+
+th, td {
+	outline: 1px dashed red;
+	padding: 3px;
+}
+
+h1 {
+  text-align: center;
+
+}
