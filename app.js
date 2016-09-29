@@ -117,28 +117,48 @@ renderAllLocations(); // loop through the array of objects representing each sto
 makeFooterRow(); // make a row across the bottom of the table that sums each hour's total across all locations
 
 
+//Variables for DOM access
 
 var locationForm = document.getElementById('new-location-form');
+//var allLocations = [];
 
-var EnterLocation = function(locationName, text) {
-  this.locationName = locationName;
-  this.text = text;
+//Constructor function
 
-  EnterLocation.prototype.render = function() {
-  var liEl = document.createElement('li');
 
-  liEl.addEventListener('event', enterLocation);
-  locationForm.appendChild(liEl);
+//Function Declarations
+
+
+//};
+// This function is the event handler for the submission of comments
+function handleNewLocationFormSubmit(event) {
+
+  event.preventDefault();
+
+  if (!event.target.locationName.value || !event.target.minCustPerHour.value || !event.target.maxCustPerHour.value || !event.target.avgCookiesPerCust.value) {
+    return alert('Fields cannot be empty!');
+  }
+
+  var locationE = event.target.locationName.value;
+  var minCustE = parseInt(event.target.minCustPerHour.value);
+  var maxCustE = parseInt(event.target.maxCustPerHour.value);
+  var avePerCustE = parseInt(event.target.avgCookiesPerCust.value);
+
+  event.target.locationName.value = null;
+  event.target.minCustPerHour.value = null;
+  event.target.maxCustPerHour.value = null;
+  event.target.avgCookiesPerCust.value = null;
+  console.log(locationE,minCustE,maxCustE,avePerCustE);
+
+
+  new CookieStand(locationE, minCustE, maxCustE, avePerCustE);
+
+  salesDataTable.innerHTML = '';
+  makeHeaderRow();
+  renderAllLocations();
+  makeFooterRow();
 
 };
-
+locationForm.addEventListener('submit', handleNewLocationFormSubmit);
+// locationForm.appendChild(liEl);
 
 //appendChild
-
-
-// function handleLocationSubmit(event) { //NEED THIS to create event
-//   event.preventDefault(); //gotta have it for this purpose. prevents page reload on a 'submit' event NEED THIS
-//
-//   if (!event.target.says.value || !event.target.who.value) {
-//     return alert('Fields cannot be empty!');
-//   }
