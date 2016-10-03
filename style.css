@@ -1,9 +1,12 @@
 * {
-	/*outline: 1px dotted orange;*/
+	background-color: #ffa07a;
+  font-family: Garamond;
+
 }
 
 table {
-	outline: 2px dashed green;
+	outline: 2px solid black;
+  text-align: center;
 }
 
 tr {
@@ -11,21 +14,17 @@ tr {
 }
 
 th, td {
-	outline: 1px dashed red;
+	outline: 1px dashed blue;
 	padding: 3px;
+  background-color: #FFBCA1;
+	
 }
 
 h1 {
   text-align: center;
-
 }
+fieldset {
+  font-size: 20px;
+  width: 300px;
 
-.salmon {
-  width: 600px;
-  height: 188px:
-}
-title {
-  text-align: center;
-  size: 20px:
-  
 }
