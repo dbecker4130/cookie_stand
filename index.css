@@ -1,0 +1,54 @@
+* {
+  background-color: #ffa07a;
+}
+
+.salmon {
+  float: right;
+  width: 1000px;
+  height: 312px:
+  margin-left: 50px;
+}
+header {
+  text-align: center;
+  font-family: serif;
+  font-size: 100px;
+}
+article {
+  margin-top: 20px;
+
+}
+
+.family {
+  margin-left: 525px;
+}
+h2 {
+  width: 400px;
+  margin-left: 750px;
+}
+.chinook {
+  float: left;
+  margin-right: 10px;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+article {
+  margin-top: 20px
+  margin-bottom: 300px;
+}
+.cutter {
+  float: left;;
+  width: 40px;
+  height: 40px;
+}
+.frost {
+  width: 70px;
+  height: 60px;
+}
+ul li {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
