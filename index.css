@@ -3,7 +3,7 @@
 }
 
 .salmon {
-  float: right;
+  position: static;
   width: 1000px;
   height: 312px:
   margin-left: 50px;
@@ -13,17 +13,14 @@ header {
   font-family: serif;
   font-size: 100px;
 }
-article {
-  margin-top: 20px;
-
-}
 
 .family {
   margin-left: 525px;
 }
-h2 {
+#about {
   width: 400px;
   margin-left: 750px;
+
 }
 .chinook {
   float: left;
@@ -35,6 +32,12 @@ h2 {
 article {
   margin-top: 20px
   margin-bottom: 300px;
+  overflow: auto;
+}
+section ul li {
+  display: inline-block;
+
+
 }
 .cutter {
   float: left;;
