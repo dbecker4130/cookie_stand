@@ -24,6 +24,13 @@ h1 {
 }
 fieldset {
   font-size: 20px;
-  width: 300px;
+  width: 900px;
+}
 
+.table {
+	margin-left: 275px;
+}
+
+#salmon-cookies-round-two {
+	margin: 0 auto;
 }
