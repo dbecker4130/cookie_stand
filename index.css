@@ -6,7 +6,6 @@
   width: 1000px;
   height: 312px;
 
-
 }
 header {
   text-align: center;
@@ -85,4 +84,11 @@ footer {
 .shirt {
   width: 150px;
   height: 180px;
+}
+
+h1 a{
+  color: #000;
+}
+footer a {
+  color: #000;
 }
